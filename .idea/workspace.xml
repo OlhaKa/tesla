@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d7c5d28-6165-4af5-8952-8a60f41dcdc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tesla.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/_vars.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProBlack/GothamProBlack.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProBlack/GothamProBlack.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProBlack/GothamProBlack.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProBold/GothamProBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProBold/GothamProBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProBold/GothamProBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProLight/GothamProLight.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProLight/GothamProLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProLight/GothamProLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProRegular/GothamProRegular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProRegular/GothamProRegular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/GothamProRegular/GothamProRegular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/Cross.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/battery.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/battery_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/car.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/car_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/mobile-alt-solid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/product-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/section_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/spray-gun.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/spray-gun_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/usa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/usa_hover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prepros-6.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/_home.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/_media.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -114,11 +71,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="92">
                   <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="23">
+                  <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -155,6 +121,7 @@
         <option value="$PROJECT_DIR$/scss/_media.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/main.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -219,22 +186,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561356848023</updated>
-      <workItem from="1561356852247" duration="26682000" />
+      <workItem from="1561356852247" duration="26843000" />
     </task>
+    <task id="LOCAL-00001" summary="markup">
+      <created>1561386546051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561386546051</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26682000" />
+    <option name="totallyTimeSpent" value="26843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16159695" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16159695" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32914925" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -250,6 +226,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="markup" />
+    <option name="LAST_COMMIT_MESSAGE" value="markup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/main.css">
@@ -334,6 +314,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
