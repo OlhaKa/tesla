@@ -1,0 +1,215 @@
+.section-1 {
+  background-size: cover;
+  background-position: center;
+  min-height: 577px;
+  display: flex;
+  align-items: center;
+  padding: 120px 0 48px;
+
+  h1 {
+    color: #ffffff;
+    margin-bottom: 75px;
+  }
+}
+
+.home-services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+
+.service-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+  a {
+    color: $dark-grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px 10px;
+  }
+
+  .icon {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .text {
+    font-family: 'GothamProBold';
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  &:nth-child(1) {
+    .icon {
+      background-image: url("../media/battery.svg");
+    }
+  }
+  &:nth-child(2) {
+    .icon {
+      background-image: url("../media/car.svg");
+    }
+  }
+  &:nth-child(3) {
+    .icon {
+      background-image: url("../media/spray-gun.svg");
+    }
+  }
+  &:nth-child(4) {
+    .icon {
+      background-image: url("../media/usa.svg");
+    }
+  }
+
+}
+
+.arrow-icon {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  vertical-align: middle;
+}
+
+.arrow-icon--circle {
+  transition: stroke-dashoffset .3s ease;
+  stroke-dasharray: 95;
+  stroke-dashoffset: 95;
+}
+
+.section-2 {
+  padding: 122px 0 80px;
+  background: rgba(112, 126, 152, 0.16);
+
+  h1 {
+    margin-bottom: 76px;
+  }
+}
+
+.spares-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+}
+
+.spare-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  transition: .2s ease;
+  &:hover {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-family: 'GothamProBold';
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about {
+    font-family: 'GothamProBold';
+    font-size: 15px;
+    line-height: 24px;
+    color: $dark-grey;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 20px 0 15px;
+  }
+
+  .spare-name {
+    font-family: 'GothamProBold';
+    color: $light-grey;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .spare-price {
+    color: $red;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .spare-card .about {
+    max-height: 48px;
+    overflow: hidden;
+  }
+}
+
+.section-3 {
+  background: #E5E5E5;
+  padding: 112px 0 79px;
+
+  .tesla-info {
+    margin-top: 66px;
+    font-family: 'GothamProLight';
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    color: $light-grey;
+  }
+}
+
+.section-4 {
+  background-color: $dark-grey;
+  color: #ffffff;
+  padding: 112px 0 79px;
+
+  h1 {
+    color: #ffffff;
+    margin-bottom: 56px;
+  }
+
+  .address {
+    font-family: 'GothamProBold';
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 57px;
+  }
+
+  .map-wrap {
+    iframe {
+      width: 100%;
+      max-height: 368px;
+    }
+  }
+
+  .phones-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      font-family: 'GothamProBold';
+      color: #ffffff;
+      font-size: 18px;
+    }
+  }
+}

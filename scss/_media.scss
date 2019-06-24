@@ -1,0 +1,135 @@
+@media (max-width: 1199.98px) {
+  .section-2 .spares-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section-1 .home-services {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+
+    a {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .section-2 .spares-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body header {
+    min-height: 64px;
+
+    .logo img {
+      max-height: 48px;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      line-height: inherit;
+    }
+
+    .r-side {
+      .tel-list {
+        display: none;
+        position: absolute;
+        min-width: 152px;
+        top: calc(100% + 8px);
+        left: -53px;
+        margin: 0 !important;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+        padding: 10px 0;
+
+        li {
+          min-height: 30px;
+        }
+
+        a {
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+  //.top-header .r-side .tel-list {
+  //  margin: 0 27px;
+  //}
+
+}
+
+@media (max-width: 767.98px) {
+  .section-2 .spares-wrap {
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+  }
+  .section-3,
+  .section-4 {
+    padding: 65px 0 45px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 992px) {
+  .home-services {
+    .arrow-icon {
+      margin-top: auto;
+    }
+  }
+  .service-card:hover {
+    background: $red;
+
+    .arrow-icon {
+      transform: translate3d(5px, 0, 0);
+
+      g {
+        stroke: #FFFFFF;
+      }
+    }
+
+    .arrow-icon--circle {
+      stroke-dashoffset: 0;
+    }
+  }
+  .service-card:nth-child(1):hover .icon {
+    background-image: url("../media/battery_hover.svg");
+  }
+  .service-card:nth-child(2):hover .icon {
+    background-image: url("../media/car_hover.svg");
+  }
+  .service-card:nth-child(3):hover .icon {
+    background-image: url("../media/spray-gun_hover.svg");
+  }
+  .service-card:nth-child(4):hover .icon {
+    background-image: url("../media/usa_hover.svg");
+  }
+  .service-card a:hover {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .section-3 {
+    .tesla-info {
+      column-count: 2;
+      column-gap: 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 576px) {
+}

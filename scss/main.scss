@@ -1,0 +1,331 @@
+@import "vars";
+@import "media";
+@import "home";
+
+@font-face {
+  font-family: 'GothamProRegular';
+  src: url('../fonts/GothamProRegular/GothamProRegular.eot');
+  src: url('../fonts/GothamProRegular/GothamProRegular.eot?iefix') format('eot'),
+  url('../fonts/GothamProRegular/GothamProRegular.woff') format('woff'),
+  url('../fonts/GothamProRegular/GothamProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamProBold';
+  src: url('../fonts/GothamProBold/GothamProBold.eot');
+  src: url('../fonts/GothamProBold/GothamProBold.eot?iefix') format('eot'),
+  url('../fonts/GothamProBold/GothamProBold.woff') format('woff'),
+  url('../fonts/GothamProBold/GothamProBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamProLight';
+  src: url('../fonts/GothamProLight/GothamProLight.eot');
+  src: url('../fonts/GothamProLight/GothamProLight.eot?iefix') format('eot'),
+  url('../fonts/GothamProLight/GothamProLight.woff') format('woff'),
+  url('../fonts/GothamProLight/GothamProLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamProBlack';
+  src: url('../fonts/GothamProBlack/GothamProBlack.eot');
+  src: url('../fonts/GothamProBlack/GothamProBlack.eot?iefix') format('eot'),
+  url('../fonts/GothamProBlack/GothamProBlack.woff') format('woff'),
+  url('../fonts/GothamProBlack/GothamProBlack.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'GothamProBlack';
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 30px;
+  color: $dark-grey;
+}
+
+//----------HEADER----------
+
+header {
+  min-height: 160px;
+  background-color: $grey;
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 23px;
+}
+
+.brand-name {
+  font-family: 'GothamProBlack';
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.brand-descr {
+  font-family: 'GothamProBold';
+  font-size: 20px;
+  line-height: 40px;
+  line-height: 25px;
+}
+
+.r-side {
+  display: flex;
+  align-items: center;
+  position: relative;
+  .tel-list {
+    list-style-type: none;
+    margin: 0 54px 0 0;
+    padding: 0;
+
+    a {
+      font-family: 'GothamProBold';
+      color: #ffffff;
+      font-size: 15px;
+    }
+  }
+}
+.phones-toggler {
+  width: 32px;
+  height: 32px;
+  background-color: $light-grey;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+.menu-toggler {
+  display: flex;
+  align-items: center;
+
+  & > span {
+    font-family: 'GothamProBold';
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-right: 6px;
+  }
+
+  .menu-btn {
+    width: 32px;
+    height: 32px;
+    background-color: $light-grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+      height: 2px;
+      background-color: #ffffff;
+      transition: .2s ease;
+      margin-right: 7px;
+
+      &:first-child {
+        width: 18px;
+        margin-bottom: 5px;
+      }
+
+      &:last-child {
+        width: 14px;
+      }
+    }
+
+    &:hover {
+      span:first-child {
+        width: 12px;
+      }
+
+      span:last-child {
+        width: 18px;
+      }
+    }
+  }
+}
+
+//-------sidebar-------
+.sidebar {
+  padding: 65px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  min-height: 100vh;
+  min-width: 40vw;
+  background-color: $dark-grey;
+  z-index: 2;
+  .nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 12px 0;
+      a {
+        padding-left: 13px;
+        border-left: 4px solid transparent;
+        font-family: 'GothamProBold';
+        font-size: 24px;
+        color: #FFFFFF;
+        transition: .2s;
+        &:hover {
+          border-left: 4px solid $red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.close-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'GothamProBold';
+  color: $light-grey;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto 38px;
+  .close-btn {
+    background: url("../media/Cross.svg") no-repeat center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: $light-grey;
+    margin-left: 5px;
+  }
+  span{
+    position: relative;
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      content: '';
+      display: inline-block;
+      height: 2px;
+      background-color: $red;
+      width: 0;
+      transition: .2s ease-in-out;
+    }
+
+  }
+  &:hover span:after{
+    width: 100%;
+  }
+}
+
+//----------HEADER END----------
+
+//----------FOOTER----------
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    min-height: 30px;
+  }
+
+  a {
+    font-family: 'GothamProRegular';
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+}
+
+footer {
+  font-family: 'GothamProRegular';
+  background-color: $dark-grey;
+  padding: 35px 0 45px;
+  border-top: 1px solid #707E98;
+
+  address {
+    color: $light-grey;
+    font-size: 14px;
+    font-style: normal;
+    text-align: right;
+
+    a {
+      color: $light-grey;
+
+      &:hover {
+        color: $light-grey;
+      }
+    }
+  }
+}
+//----------FOOTER END----------
+
+//----------ANIMATION----------
+.swing-in-top-fwd {
+  -webkit-animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+    transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+
+//=====
+
+
+
+//----------ANIMATION END----------
