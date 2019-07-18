@@ -1,6 +1,8 @@
 @import "vars";
 @import "media";
 @import "home";
+@import "product";
+@import "preloader";
 
 @font-face {
   font-family: 'GothamProRegular';
@@ -42,6 +44,10 @@
   font-style: normal;
 }
 
+body {
+  font-family: 'GothamProRegular';
+}
+
 h1 {
   font-family: 'GothamProBlack';
   letter-spacing: 0.04em;
@@ -63,6 +69,12 @@ header {
   .container {
     height: 100%;
   }
+
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+  }
 }
 
 .top-header {
@@ -73,6 +85,30 @@ header {
 .l-side {
   display: flex;
   align-items: center;
+}
+
+.tel-list {
+  &.onScroll {
+    display: none;
+    position: fixed;
+    top: 72px;
+    padding: 14px 14px 14px 0 !important;
+    margin: 0 0 0 15px !important;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+    a {
+      color: $grey !important;
+      border-left: 4px solid transparent;
+      padding-left: 10px;
+      &:hover {
+        border-left: 4px solid $red;
+        color: $red;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .logo {
@@ -99,6 +135,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
+
   .tel-list {
     list-style-type: none;
     margin: 0 54px 0 0;
@@ -111,16 +148,18 @@ header {
     }
   }
 }
+
 .phones-toggler {
+  background: url("../media/mobile-alt-solid.svg") no-repeat center $light-grey;
   width: 32px;
   height: 32px;
-  background-color: $light-grey;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 12px;
 }
+
 .menu-toggler {
   display: flex;
   align-items: center;
@@ -172,37 +211,58 @@ header {
   }
 }
 
+
 //-------sidebar-------
+
 .sidebar {
   padding: 65px 0;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100vw;
   min-height: 100vh;
   min-width: 40vw;
   background-color: $dark-grey;
   z-index: 2;
+
   .nav-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
+
     li {
       padding: 12px 0;
+      margin-right: 15px;
       a {
-        padding-left: 13px;
-        border-left: 4px solid transparent;
         font-family: 'GothamProBold';
         font-size: 24px;
         color: #FFFFFF;
         transition: .2s;
+      }
+    }
+  }
+
+  &.opened {
+    right: 0;
+    .nav-menu  li {
+      a {
+        padding-left: 13px;
+        border-left: 4px solid transparent;
         &:hover {
           border-left: 4px solid $red;
           text-decoration: none;
         }
       }
     }
+    .nav-phones {
+      visibility: hidden;
+    }
+  }
+
+  &:not(.scrolled) {
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   }
 }
+
 .close-menu {
   display: flex;
   justify-content: center;
@@ -215,6 +275,7 @@ header {
   cursor: pointer;
   width: fit-content;
   margin: 0 auto 38px;
+
   .close-btn {
     background: url("../media/Cross.svg") no-repeat center;
     height: 32px;
@@ -223,8 +284,10 @@ header {
     background-color: $light-grey;
     margin-left: 5px;
   }
-  span{
+
+  span {
     position: relative;
+
     &:after {
       position: absolute;
       bottom: 0;
@@ -238,7 +301,8 @@ header {
     }
 
   }
-  &:hover span:after{
+
+  &:hover span:after {
     width: 100%;
   }
 }
@@ -283,6 +347,7 @@ footer {
     }
   }
 }
+
 //----------FOOTER END----------
 
 //----------ANIMATION----------
@@ -307,6 +372,7 @@ footer {
     opacity: 1;
   }
 }
+
 @keyframes swing-in-top-fwd {
   0% {
     -webkit-transform: rotateX(-100deg);
@@ -329,3 +395,47 @@ footer {
 
 
 //----------ANIMATION END----------
+
+//============ CONTACTS PAGE============
+.contacts {
+  background-color: #E5E5E5;
+  min-height: calc(100vh - 325px);
+
+  .section-4 {
+    background-color: transparent;
+    color: $grey;
+  }
+
+  h1 {
+    color: $grey;
+  }
+
+  .phones-list a {
+    color: $grey;
+  }
+}
+
+//============ CATALOG PAGE============
+.catalog {
+  min-height: calc(100vh - 325px);
+}
+
+
+//============ DEFAULT PAGE============
+.default-page {
+  min-height: calc(100vh - 325px);
+  padding: 122px 0 80px;
+  background: rgba(112, 126, 152, 0.16);;
+
+  h1 {
+    margin-bottom: 76px;
+  }
+
+  p {
+    color: #222222;
+  }
+
+  a {
+    color: #222222;
+  }
+}

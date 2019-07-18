@@ -22,6 +22,7 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  transition: background .2s ease-in;
 
   a {
     color: $dark-grey;
@@ -38,6 +39,7 @@
     height: 100px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 
   .text {
@@ -54,16 +56,19 @@
       background-image: url("../media/battery.svg");
     }
   }
+
   &:nth-child(2) {
     .icon {
       background-image: url("../media/car.svg");
     }
   }
+
   &:nth-child(3) {
     .icon {
       background-image: url("../media/spray-gun.svg");
     }
   }
+
   &:nth-child(4) {
     .icon {
       background-image: url("../media/usa.svg");
@@ -108,6 +113,7 @@
   background: #FFFFFF;
   border-radius: 8px;
   transition: .2s ease;
+
   &:hover {
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.32);
   }
@@ -164,7 +170,6 @@
 }
 
 .section-3 {
-  background: #E5E5E5;
   padding: 112px 0 79px;
 
   .tesla-info {
@@ -205,6 +210,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    li {
+      min-height: 43px;
+    }
 
     a {
       font-family: 'GothamProBold';

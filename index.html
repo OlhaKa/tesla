@@ -6,11 +6,16 @@
     <title>Tesla Сервис | запчасти и ремонт</title>
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <link rel='icon' href='favicon.ico' type='image/x-icon' >
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="spinner-wrap">
+    <div class="spinner"></div>
+</div>
 <header>
     <div class="container">
         <div class="top-header">
@@ -20,21 +25,20 @@
                 </div>
                 <div>
                     <div class="brand-name">Tesla <br class="d-lg-none">Сервис</div>
-                    <div class="brand-descr d-none d-lg-block">запчасти на автомобиль TESLA MODEL 3, MODEL S, <br> MODEL X новые и БУ</div>
+                    <div class="brand-descr d-none d-xl-block">запчасти на автомобиль TESLA MODEL 3, MODEL S, <br> MODEL X новые и БУ</div>
                 </div>
             </div>
             <div class="r-side">
                 <ul class="tel-list">
-                    <li><a href="tel:0678859068">067 885 90 68</a></li>
+                    <li id="tel-num1"><a href="tel:0678859068">067 885 90 68</a></li>
                     <li><a href="tel:0664874567">066 48 74 567</a></li>
                     <li><a href="tel:0636702434">063 670 24 34</a></li>
                 </ul>
-                <div class="phones-toggler d-lg-none">
-                    <img src="media/mobile-alt-solid.svg" alt="">
+                <div class="phones-toggler d-xl-none">
                 </div>
                 <div class="menu-toggler">
-                    <span class="d-none d-lg-block">Меню</span>
-                    <div class="menu-btn">
+                    <span class="d-none d-xl-block">Меню</span>
+                    <div class="menu-btn menu_toggler">
                         <span></span>
                         <span></span>
                     </div>
@@ -45,16 +49,19 @@
     <div class="sidebar">
         <div class="close-menu">
             <span>закрыть</span>
-            <div class="close-btn"></div>
+            <div class="close-btn menu_toggler"></div>
         </div>
         <ul class="nav-menu">
-            <li><a href="">Ремонт батареи</a></li>
-            <li><a href="">Компьютерная диагностика</a></li>
-            <li><a href="">Покраска/рихтовка</a></li>
-            <li><a href="">Доставка из Америки </a></li>
-            <li><a href="">Запчасти</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="default.html">Ремонт батареи</a></li>
+            <li><a href="default.html">Компьютерная диагностика</a></li>
+            <li><a href="default.html">Покраска/рихтовка</a></li>
+            <li><a href="default.html">Доставка из Америки</a></li>
+            <li><a href="catalog.html">Запчасти</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
         </ul>
+        <div class="nav-phones">
+
+        </div>
     </div>
 </header>
 <section class="section-1" style="background-image: url('media/section_bg.png')">
@@ -62,7 +69,7 @@
         <h1>услуги</h1>
         <div class="home-services">
             <div class="service-card">
-                <a href="">
+                <a href="default.html">
                     <div class="icon"></div>
                     <div class="text">Ремонт батареи</div>
                     <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -74,7 +81,7 @@
                 </a>
             </div>
             <div class="service-card">
-                <a href="">
+                <a href="default.html">
                     <div class="icon"></div>
                     <div class="text">Компьютерная диагностика </div>
                     <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -98,7 +105,7 @@
                 </a>
             </div>
             <div class="service-card">
-                <a href="">
+                <a href="default.html">
                     <div class="icon"></div>
                     <div class="text">Доставка из Америки</div>
                     <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -117,65 +124,65 @@
         <h1>Запчасти</h1>
          <div class="spares-wrap">
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque cumque debitis fugit harum laudantium pariatur placeat provident. Blanditiis, ex maxime molestias nesciunt placeat quibusdam ratione! Consequatur iure sapiente velit!</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque cumque debitis fugit harum laudantium pariatur placeat provident. Blanditiis, ex maxime molestias nesciunt placeat quibusdam ratione! Consequatur iure sapiente velit!</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн.  автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
              </div>
              <div class="spare-card">
-                 <a href="">
+                 <a href="product.html">
                      <img src="media/product-image.png" alt="">
-                     <div class="about">Кронштейн приёмника радиосигн.автономного</div>
+                     <div class="about">Кронштейн приёмника радиосигн. автономного</div>
                      <div class="spare-name">Tesla Model X</div>
                      <div class="spare-price">5 600 <span>грн</span></div>
                  </a>
