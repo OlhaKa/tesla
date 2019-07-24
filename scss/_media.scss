@@ -60,6 +60,10 @@
   .product .product-image {
     padding: 0;
   }
+
+  .spares-wrap .spare-card .img-wrap {
+    height: 300px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -189,10 +193,15 @@
       line-height: 18px;
     }
   }
+  .spares-wrap .spare-card .img-wrap {
+    height: 223px;
+  }
 }
 
 @media (max-width: 575.98px) {
-
+  .spares-wrap .spare-card .img-wrap {
+    height: 140px;
+  }
 }
 
 
@@ -221,16 +230,16 @@
     }
   }
   .service-card:nth-child(1):hover .icon {
-    background-image: url("../media/battery_hover.svg");
+    background-image: url("../images/battery_hover.svg");
   }
   .service-card:nth-child(2):hover .icon {
-    background-image: url("../media/car_hover.svg");
+    background-image: url("../images/car_hover.svg");
   }
   .service-card:nth-child(3):hover .icon {
-    background-image: url("../media/spray-gun_hover.svg");
+    background-image: url("../images/spray-gun_hover.svg");
   }
   .service-card:nth-child(4):hover .icon {
-    background-image: url("../media/usa_hover.svg");
+    background-image: url("../images/usa_hover.svg");
   }
   .service-card a:hover {
     text-decoration: none;
@@ -322,7 +331,7 @@
       line-height: 4px;
       width: 10px;
       position: absolute;
-      content: url("../media/shevron.svg");
+      content: url("../images/shevron.svg");
       display: inline-block;
       right: 5px;
       top: 10px;
