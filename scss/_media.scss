@@ -118,6 +118,7 @@
       margin: 2px 0 3px;
       font-size: 9px;
       line-height: 14px;
+      min-height: 28px;
     }
     .spare-price {
       font-size: 14px;
@@ -127,6 +128,7 @@
       margin-bottom: 6px;
       font-size: 9px;
       line-height: 14px;
+      min-height: 14px;
     }
   }
 
@@ -201,6 +203,9 @@
 @media (max-width: 575.98px) {
   .spares-wrap .spare-card .img-wrap {
     height: 140px;
+    img {
+      max-height: 100%;
+    }
   }
 }
 
